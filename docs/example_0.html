@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p>{{ clickCount }}</p>
+            <button @click="onClick">Click Me</button>
+        </div>
+        
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    clickCount: 0,
+                },
+                methods: {
+                    onClick() {
+                        this.clickCount += 1
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
+
